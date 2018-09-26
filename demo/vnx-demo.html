@@ -1,57 +1,93 @@
 <link rel="import" href="/bower_components/polymer/polymer-element.html">
 <link rel="import" href="/bower_components/paper-card/paper-card.html">
+<link rel="import" href="/bower_components/paper-styles/paper-styles.html">
 <link rel="import" href="../vnx-grid.html">
 
 <dom-module id='vnx-demo'>
   <template>
+
     <style>
       :host {
         display: block;
+        @apply --paper-font-common-base;
+        color:white;
       }
+
     </style>
 
-    <vnx-grid test>hey</vnx-grid>
-
-    <vnx-grid col1>
-      <paper-card>
-        Hello col-1
+    
+    
+    
+    <vnx-grid for-col="1" for-row-all center-all>
+      <paper-card  style="background-color: var(--google-blue-300)">
+        <h1 style="@apply --paper-font-display2">Welcome to VNX grid</h1>
       </paper-card>
     </vnx-grid>
 
-    <vnx-grid col-2>
-      <paper-card>
-        Hello col-2
+    <vnx-grid for-col="2" for-row-half>
+      <paper-card style="background-color: var(--google-blue-100)">
+        Hello for-col2
       </paper-card>
-      <paper-card>
-        Hello col-2
-      </paper-card>
-    </vnx-grid>
-
-    <vnx-grid col-3>
-      <paper-card>
-        Hello col-3
-      </paper-card>
-      <paper-card>
-        Hello col-3
-      </paper-card>
-      <paper-card>
-        Hello col-3
+      <paper-card style="background-color: var(--google-blue-500)">
+        Hello for-col2
       </paper-card>
     </vnx-grid>
 
-    <vnx-grid col-4>
-      <paper-card>
-        Hello col-4
+
+    <vnx-grid for-col="3" for-gap="0.5" for-row="1">
+      <paper-card style="background-color: var(--google-red-500)">
+        Hello for-col3
       </paper-card>
-      <paper-card>
-        Hello col-4
+      <paper-card style="background-color: var(--google-red-300)">
+        Hello for-col3
       </paper-card>
-      <paper-card>
-        Hello col-4
+      <paper-card style="background-color: var(--google-red-100)">
+        Hello for-col3
       </paper-card>
-      <paper-card>
-        Hello col-4
+    </vnx-grid>
+
+    <!--You can use gap to adjust easily between 0.5 and 1 rem of space-->
+    <vnx-grid for-col="4" for-gap="1" for-row="2">
+      <paper-card style="background-color: var(--google-green-500)">
+        a
       </paper-card>
+      <paper-card style="background-color: var(--google-green-100)">
+        Hello for-col4
+      </paper-card>
+      <paper-card style="background-color: var(--google-green-300)">
+        Hello for-col4
+      </paper-card>
+      <paper-card style="background-color: var(--google-green-700)">
+        Hello for-col4
+      </paper-card>
+    </vnx-grid>
+
+    <vnx-grid for-col="5" for-row="3">
+      <paper-card style="background-color: var(--paper-purple-50)">
+        Hello for-col5
+      </paper-card>
+      <paper-card style="background-color: var(--paper-purple-100)">
+        Hello for-col5
+      </paper-card>
+      <paper-card style="background-color: var(--paper-deep-purple-100)">
+        Hello for-col5
+      </paper-card>
+      <paper-card style="background-color: var(--paper-purple-200)">
+        Hello for-col5
+      </paper-card>
+      <paper-card style="background-color: var(--paper-purple-300)">
+        Hello for-col5
+      </paper-card>
+    </vnx-grid>
+
+
+    <vnx-grid for-col="6">
+      <paper-card style="background-color: var(--google-yellow-100)">Hello for-col6</paper-card>
+      <paper-card style="background-color: var(--google-yellow-300)">Hello for-col6</paper-card>
+      <paper-card style="background-color: var(--google-yellow-500)">Hello for-col6</paper-card>
+      <paper-card style="background-color: var(--google-yellow-700)">Hello for-col6</paper-card>
+      <paper-card style="background-color: var(--google-yellow-500)">Hello for-col6</paper-card>
+      <paper-card style="background-color: var(--google-yellow-300)">Hello for-col6</paper-card>
     </vnx-grid>
 
   </template>
@@ -66,9 +102,9 @@
         return {};
       }
 
-      constructor() {
-        super();
-      }
+      // constructor() {
+      //   super();
+      // }
     }
 
     window.customElements.define(VnxDemo.is, VnxDemo);
