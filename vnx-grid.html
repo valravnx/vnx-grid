@@ -1,0 +1,197 @@
+<link rel="import" href="/bower_components/polymer/polymer-element.html">
+
+<dom-module id="vnx-grid">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+
+      :host([for-gap="0.5"]) {
+        grid-column-gap: 0.5rem;
+      }
+
+      :host([for-gap="1"]) {
+        grid-column-gap: 1rem;
+      }
+
+      :host([for-col="1"]) {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+      }
+
+      :host([for-col="2"]) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      :host([for-col="3"]) {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+
+      :host([for-col="4"]) {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
+
+      :host([for-col="5"]) {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      }
+
+      :host([for-col="6"]) {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      }
+
+      :host([for-col="7"]) {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      }
+
+      :host([for-col="8"]) {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      }
+
+      :host([for-col="9"]) {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      }
+
+      :host([for-col="10"]) {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      }
+
+      :host([for-col="11"]) {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      }
+
+      :host([for-col="12"]) {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      }
+
+      :host([for-row="1"]) {
+        grid-template-rows: 1rem;
+      }
+      :host([for-row="2"]) {
+        grid-template-rows: 2rem;
+      }
+      :host([for-row="3"]) {
+        grid-template-rows: 3rem;
+      }
+
+      :host([for-row-all]) {
+        grid-template-rows: 100vh;
+      }
+
+      :host([for-row-half]) {
+        grid-template-rows: 50vh;
+      }
+
+      :host([center-all]){
+        align-items: center;
+        align-content: center;
+        text-align: center;
+      }
+
+      @media (max-width: 720px) {
+
+        :host([for-col="1"]) {
+          display: grid;
+          grid-template-columns: 1fr;
+        }
+
+        :host([for-col="2"]) {
+          display: grid;
+          grid-template-columns: 1fr;
+        }
+
+        :host([for-col="3"]) {
+          display: grid;
+          grid-template-columns: 1fr;
+        }
+
+        :host([for-col="4"]) {
+          display: grid;
+          grid-template-columns: 1fr;
+        }
+
+        :host([for-col="5"]) {
+          display: grid;
+          grid-template-columns: 1fr;
+        }
+
+        :host([for-col="6"]) {
+          display: grid;
+          grid-template-columns: 1fr;
+        }
+
+        :host([for-col="7"]) {
+          display: grid;
+          grid-template-columns: 1fr;
+        }
+
+        :host([for-col="8"]) {
+          display: grid;
+          grid-template-columns: 1fr;
+        }
+
+        :host([for-col="9"]) {
+          display: grid;
+          grid-template-columns: 1fr;
+        }
+
+        :host([for-col="10"]) {
+          display: grid;
+          grid-template-columns: 1fr;
+        }
+
+        :host([for-col="11"]) {
+          display: grid;
+          grid-template-columns: 1fr;
+        }
+
+        :host([for-col="12"]) {
+          display: grid;
+          grid-template-columns: 1fr;
+        }
+      }
+
+    </style>
+
+
+    <slot></slot>
+
+
+  </template>
+
+  <script>
+
+    class VnxGrid extends Polymer.Element {
+
+      static get is() {
+        return 'vnx-grid';
+      }
+
+
+      static get properties() {
+        return {};
+      }
+
+      constructor() {
+        super();
+        console.log("something bad happen");
+      }
+
+
+    }
+
+    window.customElements.define(VnxGrid.is, VnxGrid);
+  </script>
+</dom-module>
