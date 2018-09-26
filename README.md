@@ -1,5 +1,21 @@
-# Polymer 2 vnx-grid System
+# \<vnx-grid\>
 
-In Polymer 2 there is the chance to manage grid with the help of some layouts, but if you feel as I did about managing several grid capabilities at the same time, then try vnx-grid, a simple grid system based on the CSS grid capabilities that let you to experiment with fr metrics, check https://developer.mozilla.org/es/docs/Web/CSS/CSS_Grid_Layout  for more topics related
+Vnx grid is a simple  grid system based on CSS GRID rules
 
-![alt text](https://raw.githubusercontent.com/valravnx/vnx-grid/master/docs/img/main-product.jpg)
+## Install the Polymer-CLI
+
+First, make sure you have the [Polymer CLI](https://www.npmjs.com/package/polymer-cli) installed. Then run `polymer serve` to serve your element locally.
+
+## Viewing Your Element
+
+```
+$ polymer serve
+```
+
+## Running Tests
+
+```
+$ polymer test
+```
+
+Your application is already set up to be tested via [web-component-tester](https://github.com/Polymer/web-component-tester). Run `polymer test` to run your application's test suite locally.

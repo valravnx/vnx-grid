@@ -1,0 +1,76 @@
+<link rel="import" href="/bower_components/polymer/polymer-element.html">
+<link rel="import" href="/bower_components/paper-card/paper-card.html">
+<link rel="import" href="../vnx-grid.html">
+
+<dom-module id='vnx-demo'>
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+
+    <vnx-grid test>hey</vnx-grid>
+
+    <vnx-grid col1>
+      <paper-card>
+        Hello col-1
+      </paper-card>
+    </vnx-grid>
+
+    <vnx-grid col-2>
+      <paper-card>
+        Hello col-2
+      </paper-card>
+      <paper-card>
+        Hello col-2
+      </paper-card>
+    </vnx-grid>
+
+    <vnx-grid col-3>
+      <paper-card>
+        Hello col-3
+      </paper-card>
+      <paper-card>
+        Hello col-3
+      </paper-card>
+      <paper-card>
+        Hello col-3
+      </paper-card>
+    </vnx-grid>
+
+    <vnx-grid col-4>
+      <paper-card>
+        Hello col-4
+      </paper-card>
+      <paper-card>
+        Hello col-4
+      </paper-card>
+      <paper-card>
+        Hello col-4
+      </paper-card>
+      <paper-card>
+        Hello col-4
+      </paper-card>
+    </vnx-grid>
+
+  </template>
+
+  <script>
+    class VnxDemo extends Polymer.Element {
+      static get is() {
+        return 'vnx-demo';
+      }
+
+      static get properties() {
+        return {};
+      }
+
+      constructor() {
+        super();
+      }
+    }
+
+    window.customElements.define(VnxDemo.is, VnxDemo);
+  </script>
+</dom-module>
